@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Kitty - Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+/* CART site, to make it look the part */
+    /* Navigation bar styling. I didn't know how to make it repeat use of a footer or header.*/
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #9c89d9;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .navbar .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .icons img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    /* Cart Section, most of it is nonfunctional but looks the part! :> */
+    .cart-section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .cart-section h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .cart-item img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .cart-item-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .cart-item-details h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .cart-item-details p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .cart-item .item-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #9c89d9;
+    }
+
+    .cart-summary {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .cart-summary h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .checkout-button {
+      background-color: #9c89d9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .checkout-button:hover {
+      background-color: #7a6fb0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Logos and Redirects Stuffo -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="smallerkitty.png" alt="Sticky Kitty Logo">
+      <span>Sticky Kitty</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="prints.html">Prints</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="icons">
+      <img src="searchicon.png" alt="Search">
+      <img src="favoriteicon.png" alt="Favorites">
+      <img src="carticon.png" alt="Cart">
+    </div>
+  </div>
+
+  <!-- Cart Section Logos and Redirect Stuffo -->
+  <div class="cart-section">
+    <h1>Your Cart</h1>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="sticker7.png" alt="Bee & Puppycat">
+        <div class="cart-item-details">
+          <h2>Bee & Puppycat</h2>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">$10.00</div>
+      </div>
+      <div class="cart-item">
+        <img src="sticker8.png" alt="Miku 15th Anniversary">
+        <div class="cart-item-details">
+          <h2>Miku 15th Anniversary</h2>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">$15.00</div>
+      </div>
+      <div class="cart-item">
+        <img src="sticker1.png" alt="Spirited Away">
+        <div class="cart-item-details">
+          <h2>Spirited Away</h2>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">$10.00</div>
+      </div>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h3>Total: $35.00</h3>
+      <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Kitty - Prints</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #9c89d9;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .navbar .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .icons img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    /* Prints Section */
+    .prints-section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .prints-section h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .prints-section hr {
+      width: 60%;
+      margin: 20px auto;
+      border: 0;
+      border-top: 2px solid #9c89d9;
+    }
+
+    .prints-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 20px auto;
+    }
+
+    .prints-item {
+      text-align: center;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .prints-item img {
+      width: 100%;
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    .prints-item p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .prints-item .price {
+      font-weight: bold;
+      color: #9c89d9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="smallerkitty.png" alt="Sticky Kitty Logo">
+      <span>Sticky Kitty</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="prints.html">Prints</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="icons">
+      <img src="searchicon.png" alt="Search">
+      <img src="favoriteicon.png" alt="Favorites">
+      <img src="carticon.png" alt="Cart">
+    </div>
+  </div>
+
+  <!-- Prints Section -->
+  <div class="prints-section">
+    <h1>Prints</h1>
+    <hr>
+    <div class="prints-grid">
+      <div class="prints-item">
+        <img src="sticker7.png" alt="Bee & Puppycat">
+        <p>Bee & Puppycat</p>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="prints-item">
+        <img src="sticker8.png" alt="Miku 15th Anniversary">
+        <p>Miku 15th Anniversary</p>
+        <p class="price">$15.00</p>
+      </div>
+      <div class="prints-item">
+        <img src="sticker6.png" alt="Madoka Magica">
+        <p>Madoka Magica</p>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="prints-item">
+        <img src="natoristicker.png" alt="Natori Sana">
+        <p>Natori Sana</p>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="prints-item">
+        <img src="sticker5.png" alt="Hu Tao">
+        <p>Hu Tao</p>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="prints-item">
+        <img src="sticker1.png" alt="Spirited Away">
+        <p>Spirited Away</p>
+        <p class="price">$10.00</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

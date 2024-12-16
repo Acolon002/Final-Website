@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Kitty</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    /* Main page has all the stuff and layout for other pages after this. Don't know how to make a header
+    set, so I am making the header over again in every page. */
+    /* Navigation bar styling, colors, themes, etc */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #9c89d9;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .navbar .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .icons img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    /* Carousel image on the front of the website! Tried making it spin initially. Did not work. */
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    .carousel img {
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* About section */
+    .about {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .about .text {
+      max-width: 45%;
+    }
+
+    .about h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Image grid previews */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .grid-item {
+      text-align: center;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .grid-item img {
+      width: 100%;
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .grid-item p {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="smallerkitty.png" alt="Sticky Kitty Logo">
+      <span>Sticky Kitty</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="prints.html">Prints</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="icons">
+      <img src="searchicon.png" alt="Search">
+      <img src="favoriteicon.png" alt="Favorites">
+      <a href="cart.html"><img src="carticon.png" alt="Cart"></a>
+    </div>
+  </div>
+
+<!-- Carousel and About Section fixing code so that its centered with each part taking half of the screen. -->
+<div class="carousel-about-container" style="display: flex; align-items: center; justify-content: center; max-width: 1200px; margin: 50px auto;">
+  <!-- Carousel -->
+  <div class="carousel" style="flex: 1; display: flex; justify-content: center;">
+    <img src="smallerkitty.png" alt="Carousel Image" style="max-width: 100%; border: 1px solid #ccc; border-radius: 5px;">
+  </div>
+
+  <!-- About Section -->
+  <div class="about" style="flex: 1; padding: 0 20px; text-align: center;">
+    <div class="text">
+      <h2>About us</h2>
+      <p>Hi! I'm Alex! I love creating art pieces with my team in the form of stickers and prints! Our ideas are collected from different shows and movies with a very unique touch and style. If you're interested in bringing an idea to life, contact us!</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Grid Section Logos Stuff -->
+  <div class="grid">
+    <div class="grid-item">
+      <img src="sticker1.png" alt="Stickers">
+      <p>Stickers</p>
+    </div>
+    <div class="grid-item">
+      <img src="Dating_Sim.png" alt="Prints">
+      <p>Prints</p>
+    </div>
+    <div class="grid-item">
+      <img src="Gawr_Gura_.png" alt="Popular">
+      <p>Popular</p>
+    </div>
+    <div class="grid-item">
+      <img src="Hanako_Kun_.png" alt="Fan Favs">
+      <p>Commissions</p>
+    </div>
+  </div>
+
+</body>
+</html>

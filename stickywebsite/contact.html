@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Kitty - Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    /* Navigation bar styling!!! Simple box design with alignment. */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #9c89d9;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .navbar .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .icons img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    /* Contact Section, tried to make this look simple with the same theme going on. */
+    .contact-section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section hr {
+      width: 60%;
+      margin: 20px auto;
+      border: 0;
+      border-top: 2px solid #9c89d9;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #9c89d9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #7a6fb2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Front View 
+    Timey Wimey Stuff -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="smallerkitty.png" alt="Sticky Kitty Logo">
+      <span>Sticky Kitty</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="prints.html">Prints</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="icons">
+      <img src="searchicon.png" alt="Search">
+      <img src="favoriteicon.png" alt="Favorites">
+      <img src="carticon.png" alt="Cart">
+    </div>
+  </div>
+
+  <!-- Contact Section Front View Stuffo, with required fields that need input. 
+    Played around with it! Didn't get the button redirect :/ -->
+  <div class="contact-section">
+    <h1>Contact Us</h1>
+    <hr>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button> <href="submittedmessage.html"></a>
+    </form>
+  </div>
+</body>
+</html>

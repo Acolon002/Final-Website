@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Kitty - Message Submitted</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+/* Actual content of the fields provided in the contact form, go nowhere BUT, should be redirecting onto this. */
+    /* Navigation bar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #9c89d9;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .navbar .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .icons img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    /* Confirmation Section */
+    .confirmation-section {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .confirmation-section h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #9c89d9;
+    }
+
+    .confirmation-section p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .confirmation-section a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #9c89d9;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .confirmation-section a:hover {
+      background-color: #7a6fb0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="smallerkitty.png" alt="Sticky Kitty Logo">
+      <span>Sticky Kitty</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="prints.html">Prints</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="icons">
+      <img src="searchicon.png" alt="Search">
+      <img src="favoriteicon.png" alt="Favorites">
+      <a href="cart.html"><img src="carticon.png" alt="Cart"></a>
+    </div>
+  </div>
+
+  <!-- Confirmation Section -->
+  <div class="confirmation-section">
+    <h1>Thank You!</h1>
+    <p>Your message has been submitted. We will respond as promptly as we can!</p>
+    <a href="index.html">Return to Home</a>
+  </div>
+</body>
+</html>
